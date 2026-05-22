@@ -34,7 +34,7 @@ class CarRenderer(context: Context) {
         val carWidth = 140f
         val carHeight = 70f
 
-/
+
         val topLeftX = car.x - (carWidth / 2f)
         val topLeftY = drawY - (carHeight / 2f)
 

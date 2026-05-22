@@ -223,7 +223,7 @@ fun GameScreen() {
             }
         }
     }
-    // Стабильный игровой цикл обновлений
+    // игровой цикл обновлений
     LaunchedEffect(isGameOver, isMenuOpen) {
         while (!isGameOver && !isMenuOpen) {
             delay(16)
@@ -327,7 +327,7 @@ fun GameScreen() {
                 }
             }
 
-            // Расчет физики Джойстика
+            // Расчет физики джойстика
             val center = joystickCenter
             val pointer = joystickPointer
             if (center != null && pointer != null) {
@@ -539,7 +539,7 @@ fun GameScreen() {
 
                     // 5. трисовка спрайта
                     if (guardTexture != null) {
-                        val gSize = 70f // Размер охранника на экране
+                        val gSize = 350f // Размер охранника на экране
                         val gLeftX = guard.x - (gSize / 2f)
                         val gTopY = drawY - (gSize / 2f)
 
@@ -597,7 +597,7 @@ fun GameScreen() {
 
 // 2. ОТРИСОВКА ИГРОКА
                     if (playerTexture != null) {
-                        val pSize = 70f // Размер игрока
+                        val pSize = 350f // Размер игрока
                         val pLeftX = playerX - (pSize / 2f)
                         val pTopY = playerY - (pSize / 2f)
 
